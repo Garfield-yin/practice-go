@@ -1,0 +1,2 @@
+# practice-go
+Daily practice

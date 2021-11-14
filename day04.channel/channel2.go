@@ -21,6 +21,12 @@ func main() {
 	SendInt(ch3)
 
 	ch4 := getChan()
+	/*
+	当通道ch4中没有元素值时，这条for语句会被阻塞在有for关键字的那一行，
+	直到有新的元素值可取。
+	不过，由于这里的getIntChan函数会事先将ch4关闭，
+	所以它在取出ch4中的所有元素值之后会直接结束执行。
+	*/
 	for ele := range ch4{
 			fmt.Printf("The element in ch4: %v\n", ele)
 	}

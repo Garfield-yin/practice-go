@@ -39,5 +39,6 @@ func main(){
 		// &pig 是否实现了 Pet 接口
 	_,ok = interface{}(&pig).(Pet)
 	fmt.Printf("&pig implements interface Pet: %v\n", ok)
+
 }
 
